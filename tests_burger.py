@@ -4,12 +4,8 @@ from bun import Bun
 from ingredient import Ingredient
 from ingredient_types import INGREDIENT_TYPE_SAUCE
 from unittest.mock import Mock
+from data import items
 
-
-items = [
-        Ingredient(INGREDIENT_TYPE_SAUCE, "огонь", 100.0),
-        Ingredient(INGREDIENT_TYPE_SAUCE, "вода", 200.0),
-        Ingredient(INGREDIENT_TYPE_SAUCE, "земля", 300.0),]
 
 class TestBurger:
     def test_set_buns_sets_bun(self):
